@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خادم الحسین فوتسال | برنامه تمرینی</title>
+    
+    <!-- آیکون‌ها (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- لینک به فایل استایل -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- پس زمینه متحرک -->
+    <div class="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- هدر -->
+    <header>
+        <div class="logo-container">
+            <!-- لوگو از پوشه img بارگذاری می‌شود -->
+            <img src="img/logo.png" alt="Logo Team" class="header-logo">
+        </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#structure">برنامه روزانه</a></li>
+                <li><a href="#schedule">برنامه ۲۰ جلسه</a></li>
+                <li><a href="#goalkeeper">آکادمی گلری</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- بخش اصلی (Hero) -->
+    <section id="home" class="hero">
+        <h1>تیم فوتسال <span>خادم الحسین</span></h1>
+        <p>برنامه جامع تمرینی برای قهرمانی. آماده‌سازی تخصصی بازیکنان و دروازه‌بانان.</p>
+        <button class="btn-cta" onclick="document.getElementById('structure').scrollIntoView({behavior: 'smooth'})">
+            مشاهده برنامه <i class="fas fa-angle-down"></i>
+        </button>
+    </section>
+
+    <!-- ساختار هر جلسه -->
+    <section id="structure" class="reveal">
+        <h2 class="section-title">ساختار جلسه تمرینی</h2>
+        <div class="session-grid">
+            <div class="session-card">
+                <i class="fas fa-running session-icon"></i>
+                <h3>گرم کردن</h3>
+                <span class="session-time">۱۰ دقیقه</span>
+                <p>دویدن، حرکات کششی دینامیک و بازی‌های کوتاه با توپ.</p>
+            </div>
+            <div class="session-card">
+                <i class="fas fa-stopwatch session-icon"></i>
+                <h3>تکنیک</h3>
+                <span class="session-time">۴۵ دقیقه</span>
+                <p>تمرکز بر دریبل، پاس، کنترل و شوت. تمرینات انفرادی و گروهی.</p>
+            </div>
+            <div class="session-card">
+                <i class="fas fa-chess-board session-icon"></i>
+                <h3>تاکتیک</h3>
+                <span class="session-time">۳۰ دقیقه</span>
+                <p>حمله، دفاع، پرس و موقعیت‌های شبیه به بازی واقعی.</p>
+            </div>
+            <div class="session-card">
+                <i class="fas fa-spa session-icon"></i>
+                <h3>سرد کردن</h3>
+                <span class="session-time">۱۰ دقیقه</span>
+                <p>حرکات کششی استاتیک و پیاده‌روی آرام برای جلوگیری از آسیب.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- برنامه ۲۰ جلسه -->
+    <section id="schedule" class="reveal">
+        <h2 class="section-title">نقشه راه ۲۰ جلسه</h2>
+        <div class="timeline">
+            <div class="phase left">
+                <div class="content">
+                    <h3>هفته ۱ تا ۴: پایه</h3>
+                    <ul>
+                        <li>دریبل و پاس‌های دقیق</li>
+                        <li>کنترل توپ با هر دو پا</li>
+                        <li>شوت‌های پایه</li>
+                        <li>بازی‌های ۳ به ۳</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase right">
+                <div class="content">
+                    <h3>هفته ۵ تا ۸: فردی پیشرفته</h3>
+                    <ul>
+                        <li>حرکات فریبنده</li>
+                        <li>شوت‌های خاص (والی)</li>
+                        <li>بازی با سر</li>
+                        <li>بازی‌های ۲ به ۲</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase left">
+                <div class="content">
+                    <h3>هفته ۹ تا ۱۲: تاکتیک</h3>
+                    <ul>
+                        <li>حمله سریع و ضدحمله</li>
+                        <li>پرس گروهی و دفاع منطقه‌ای</li>
+                        <li>بازی‌های ۴ به ۴ و ۵ به ۵</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase right">
+                <div class="content">
+                    <h3>هفته ۱۳ تا ۱۶: ترکیبی</h3>
+                    <ul>
+                        <li>ضدحمله و یارگیری</li>
+                        <li>ضربات ایستگاهی</li>
+                        <li>بازی‌های ۶ به ۶</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase left">
+                <div class="content">
+                    <h3>هفته ۱۷ تا ۲۰: مسابقه</h3>
+                    <ul>
+                        <li>بازی‌های دوستانه قوی</li>
+                        <li>مرور تاکتیک‌ها</li>
+                        <li>تقویت روحیه تیمی</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش ویژه گلر (سوپر گرافیکی) -->
+    <section id="goalkeeper" class="reveal">
+        <h2 class="section-title">آکادمی تخصصی گلرها</h2>
+        
+        <div class="gk-hero-quote">
+            "دروازه بان ستون تیم است. محکم‌ترین و استوارترین باشید. شکست و پیروزی تیم بستگی به شما دارد."
+        </div>
+
+        <div class="gk-dashboard">
+            
+            <!-- ستون ۱: ذهنی و رهبری -->
+            <div class="gk-module module-mental">
+                <div class="module-header">
+                    <i class="fas fa-brain module-icon"></i>
+                    <h3 class="module-title">ذهن و رهبری</h3>
+                </div>
+                <div class="chip-container">
+                    <div class="gk-chip"><span class="chip-dot"></span>اخلاق خوب و نیکو</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>احترام گذاشتن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>در اختیار تیم بودن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>کبر و غرور نداشتن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>قلب تیم بودن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>روحیه جنگیدن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>نگه داشتن وظیفه تا آخر</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>اعتماد به کادر فنی</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>تمرکز صد در صد</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>پشت سر گذاشتن دغدغه‌ها</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>مراقبت از فکر و هوش</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>هوشیار بودن کامل</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>پشتکار همیشگی</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>الگوی دیگر بازیکنان</div>
+                </div>
+            </div>
+
+            <!-- ستون ۲: فنی و تاکتیکی -->
+            <div class="gk-module module-tech">
+                <div class="module-header">
+                    <i class="fas fa-bullseye module-icon"></i>
+                    <h3 class="module-title">فنی و تاکتیکی</h3>
+                </div>
+                <div class="chip-container">
+                    <div class="gk-chip"><span class="chip-dot"></span>سریع بودن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>جایگیری مناسب</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>تصمیم‌گیری به جا</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>شیرجه صحیح</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>همراهی با تمرینات</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>تصمیم‌گیری سریع</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>نگاه به توپ و پای افراد</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>واکنش‌های سریع</div>
+                </div>
+            </div>
+
+            <!-- ستون ۳: جسمانی و مراقبت -->
+            <div class="gk-module module-health">
+                <div class="module-header">
+                    <i class="fas fa-heartbeat module-icon"></i>
+                    <h3 class="module-title">جسمانی و مراقبت</h3>
+                </div>
+                <div class="chip-container">
+                    <div class="gk-chip"><span class="chip-dot"></span>چابک بودن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>نترسیدن و استوار بودن</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>گرم کردن کامل</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>سرد کردن کامل</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>مراقبت از تغذیه</div>
+                    <div class="gk-chip"><span class="chip-dot"></span>تلاش و علاقه</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- فوتر (بدون لینک‌های ارجاع) -->
+    <footer>
+        <img src="img/logo.png" alt="Logo" class="footer-logo">
+        <p>&copy; ۱۴۰۴ تمامی حقوق برای تیم فوتسال خادم الحسین محفوظ است.</p>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 10px;">طراحی شده توسط گلر تیم ❤️</p>
+    </footer>
+
+    <!-- لینک به فایل جاوا اسکریپت -->
+    <script src="script.js"></script>
+</body>
+</html>
